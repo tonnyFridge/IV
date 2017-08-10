@@ -10,7 +10,8 @@
 <div class="base-block">
   This page is created to demonstrate some of the most irritating bugs. Surely, I couldn't
   find all of them, and some of them were already fixed (see images in lists and
-  blockquotes as example (Although they are not fixed by the time of publishing, I'm sure they were fixed the day before)). Some other bugs are not very important, however I added all
+  blockquotes as example (Although they are not fixed by the time of publishing, I'm sure they were fixed the day
+  before)). Some other bugs are not very important, however I added all
   the cases I could remember.
 </div>
 
@@ -69,8 +70,8 @@
         <li> Item</li>
       </ol>
 
-      <h6> Nested ol list with images</h6>
-      <ol>
+      <h6> Nested ol list with images. It also starts from 10</h6>
+      <ol start="10">
         <li>
           <img
             src="https://upload.wikimedia.org/wikipedia/en/b/b1/Portrait_placeholder.png"></li>
@@ -112,17 +113,17 @@
   <figure>
     <figcaption>Nested figures are entirely valid</figcaption>
     <figure>
-      <figcaption> First placeholder </figcaption>
+      <figcaption> First placeholder</figcaption>
       <img src="https://upload.wikimedia.org/wikipedia/en/b/b1/Portrait_placeholder.png"
            alt="The castle has one tower, and a tall wall around it.">
     </figure>
     <figure>
-      <figcaption> Second placeholder </figcaption>
+      <figcaption> Second placeholder</figcaption>
       <img src="https://upload.wikimedia.org/wikipedia/en/b/b1/Portrait_placeholder.png"
            alt="The castle now has two towers and two walls.">
     </figure>
     <figure>
-      <figcaption> Third placeholder </figcaption>
+      <figcaption> Third placeholder</figcaption>
       <img src="https://upload.wikimedia.org/wikipedia/en/b/b1/Portrait_placeholder.png"
            alt="The castle lies in ruins, the original tower all that remains in one piece.">
     </figure>
@@ -221,6 +222,24 @@
   </p>
 </div>
 
+
+<h2> Lost tags </h2>
+
+<div class="base-block">
+
+  <p>
+    2<sup>3</sup>*2<sup>7</sup>=1024<sub>10</sub>=10000000000<sub>2</sub>
+  </p>
+  <p>1<sup>st</sup> is not the 2<sup>nd</sup></p>
+
+  <p>
+    <dfn title="can be used to indicate the power">superscript</dfn>
+    <br>
+    <dfn title="can be used to indicate the base">subscript</dfn>
+  </p>
+
+</div>
+
 <h2> Other bugs </h2>
 
 <div class="base-block">
@@ -231,9 +250,9 @@
   <p> And i don't no why, because I see no difference ¯\_(ツ)_/¯</p>
 
   <h3> Div Strange behavior</h3>
-  <div> <span> I look and behave like a paragraph </span> </div>
-  <div> <span> But I'm not </span> </div>
-  <div> <span> It is pretty unintuitive that a block element is rendered as inline </span></div>
+  <div><span> I look and behave like a paragraph </span></div>
+  <div><span> But I'm not </span></div>
+  <div><span> It is pretty unintuitive that a block element is rendered as inline </span></div>
 </div>
 
 </body>
