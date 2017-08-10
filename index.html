@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>What works and what doesn't</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<div class="base-block">
+  This page is created to demonstrate some of the most irritating bugs. Surely, I couldn't
+  find all of them, and some of them were already fixed (see images in lists and
+  blockquotes as example). Some other bugs are not very important, however I added all
+  the cases I could remember.
+</div>
+
+<h2> Lists test </h2>
+
+<div class="base-block">
+  <ol>
+    <li><a href="#"> Simple item </a></li>
+
+    <li>
+      <div>
+        <h5> This is a simple image in list</h5>
+        <figure>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/b/b1/Portrait_placeholder.png">
+          <figcaption> By wikimedia commons</figcaption>
+        </figure>
+      </div>
+    </li>
+
+    <li>
+      <div>
+        <h5> This is a base64 image in the list</h5>
+        <figure>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAADcAQMAAADjpBlGAAAABlBMVEX////m5ua54GxLAAABo0lEQVR4Xu3WwW30IBAF4LE4+MjfAS2kA1pKB6Y0SqEEjhwQ+bX2YjPMBMwKKUq07/id4c2DLzZ+zN/+9gSgOHcAwDkAgKIeHi6oO3iEutld155gj6w9HC5q94cvtVs4slVunq4rh2cU9ph9xR6yC+w++4LdQQ52e/qG3JyukcMZVXq6XN7xePlaerhclO4vX0p3cOWO28K3G24K1zcciqi+p9Jl32Pp6+seShevuy99me8Oyvwdf3v/Pcz3We9/2n8c74HxnhnvsfGeHO9h2ue0/7v3Yvzu0PvF37v+fXSnd+8vvdf9+073AN0P/b1B9wndM4P7h+6czp6R2GNvtwB2190nCnl3b9Bdwb/b/h5Qhbf/L+2Bxj3t9+d2ukWuTzfI1emAIrMn7Gv2iF1kD9iX7B5wsrvKt6fbyvXTTeWq41BFHp5qX9seaxeHh9qXwz3Uabsjvu1uieumG+JqdyCRLU/U14dH6uIVD9SXlnugabljfGu4ZVw33DCuGg5M5LgnztfvPXIu5nngfBl3D1zmuWP9c5pb1j+muWH93w/6r85/5C+myQmJTTAAAAAASUVORK5CYII=">
+          <figcaption> By wikimedia commons</figcaption>
+        </figure>
+      </div>
+    </li>
+
+    <li>
+      <h5> Quote in the list </h5>
+      <blockquote>
+        “Hell is empty and all the devils are here.”
+        <cite> William Shakespeare </cite>
+      </blockquote>
+      <aside>
+        A pull quote (also known as a lift-out pull quote) is a key phrase, quotation, or excerpt that has been pulled
+        from an article and used as a graphic element, serving to entice readers into the article or to highlight a
+        key
+        topic.
+      </aside>
+    </li>
+
+    <li>
+      <h5> Nested lists:</h5>
+      <h6> Nested ul list </h6>
+      <ul>
+        <li> Item</li>
+        <li> Item</li>
+      </ul>
+      <h6> Nested ol list</h6>
+      <ol>
+        <li> Item</li>
+        <li> Item</li>
+      </ol>
+
+      <h6> Nested ol list with images</h6>
+      <ol>
+        <li>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/b/b1/Portrait_placeholder.png"></li>
+        <li>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/b/b1/Portrait_placeholder.png"></li>
+      </ol>
+    </li>
+
+  </ol>
+</div>
+
+
+<h2> Figure test </h2>
+
+<div class="base-block">
+
+  <figure>
+    <table class="table">
+      <thead>
+      <tr>
+        <th> One</th>
+        <th> Two</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td> Three</td>
+        <td> Four</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <figcaption>
+      Not enough fantasy, I know
+    </figcaption>
+  </figure>
+
+  <figure>
+    <figcaption>Nested figures are entirely valid</figcaption>
+    <figure>
+      <figcaption> First placeholder </figcaption>
+      <img src="https://upload.wikimedia.org/wikipedia/en/b/b1/Portrait_placeholder.png"
+           alt="The castle has one tower, and a tall wall around it.">
+    </figure>
+    <figure>
+      <figcaption> Second placeholder </figcaption>
+      <img src="https://upload.wikimedia.org/wikipedia/en/b/b1/Portrait_placeholder.png"
+           alt="The castle now has two towers and two walls.">
+    </figure>
+    <figure>
+      <figcaption> Third placeholder </figcaption>
+      <img src="https://upload.wikimedia.org/wikipedia/en/b/b1/Portrait_placeholder.png"
+           alt="The castle lies in ruins, the original tower all that remains in one piece.">
+    </figure>
+  </figure>
+
+  <figure id="l4">
+    <figcaption> Sample code elem</figcaption>
+    <pre><code>figure {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  border: 2px solid grey;
+}
+    </code></pre>
+  </figure>
+</div>
+
+<h2> Quotes test </h2>
+
+<div class="base-block">
+  <blockquote>
+    <p>
+      Usually blockquotes use paragraphs not brs
+    </p>
+
+    <h6> Sometimes lists are present </h6>
+    <ol>
+      <li> Item</li>
+      <li> Item</li>
+      <li> Item</li>
+    </ol>
+
+    <ul>
+      <li> Item</li>
+      <li> Item</li>
+      <li> Item</li>
+    </ul>
+
+    <p> Img in quotes is a rare case, however </p>
+    <img style="height: 100px"
+         src="https://upload.wikimedia.org/wikipedia/en/b/b1/Portrait_placeholder.png">
+
+    <p>
+      One more paragraph finally
+    </p>
+    <footer>
+      Said by
+      <cite>...</cite>
+    </footer>
+  </blockquote>
+
+
+  <aside>
+    <p>
+      Same with pullquotes
+    </p>
+
+    <h6> Sometimes lists are present </h6>
+    <ol>
+      <li> Item</li>
+      <li> Item</li>
+      <li> Item</li>
+    </ol>
+
+    <ul>
+      <li> Item</li>
+      <li> Item</li>
+      <li> Item</li>
+    </ul>
+
+    <p> Img in quotes is a rare case, however </p>
+    <img style="height: 100px"
+         src="https://upload.wikimedia.org/wikipedia/en/b/b1/Portrait_placeholder.png">
+
+    <p>
+      One more paragraph finally
+    </p>
+    <footer>
+      Sometimes pullquotes have authors too:
+      <cite>...</cite>
+    </footer>
+  </aside>
+</div>
+
+<h2> Paragraphs test </h2>
+
+<div class="base-block">
+
+  <p> Sometimes paragrpahs contain inline imgs
+    <img src="https://upload.wikimedia.org/wikipedia/en/3/34/AlthepalHappyface.svg" style="height: 20px; width:auto;">
+    IV will not render them properly. It is not that-very-important-and-critical bug however
+  </p>
+</div>
+
+<h2> Other bugs </h2>
+
+<div class="base-block">
+  <p> This github iframe will work</p>
+  <script src="https://gist.github.com/andrew--r/7036d04424e36ab95d30.js?file=disable-hover.js"></script>
+  <p> And this will not</p>
+  <script src="https://gist.github.com/andrew--r/7036d04424e36ab95d30.js?file=disable-hover.css"></script>
+  <p> And i don't no why, because I see no difference ¯\_(ツ)_/¯</p>
+
+  <h3> Div Strange behavior</h3>
+  <div> I look and behave like a paragraph</div>
+  <div> But I'm not</div>
+  <div> It is pretty unintuitive that a block element is rendered as inline</div>
+</div>
+
+</body>
+</html>

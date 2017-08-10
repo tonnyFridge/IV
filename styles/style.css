@@ -1,0 +1,60 @@
+
+body {
+  margin: 20px;
+}
+
+.base-block {
+  max-width: 500px;
+  margin: auto;
+}
+
+h2 {
+  display: block;
+  width: 100%;
+  padding-top: 20px;
+
+  text-align: center;
+  border-top: 2px solid rgba(0,0,0,0.5);
+}
+
+figure {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  border: 2px solid grey;
+}
+
+figcaption {
+  padding: 10px;
+  font-style: italic;
+}
+
+img {
+  width: 100px;
+}
+
+blockquote, aside {
+  margin-left: auto;
+  padding-left: 30px;
+}
+
+blockquote {
+  border-left: 2px solid grey;
+}
+
+aside {
+  font-style: italic;
+}
+
+blockquote footer, blockquote cite {
+  display: block;
+}
+
+.table, .table td, .table th {
+  padding: 5px;
+  border: 1px double black;
+}
